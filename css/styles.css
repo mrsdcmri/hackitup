@@ -51,7 +51,7 @@ h1 {
     font-family: ironcobra;
     font-size: 7rem;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
     background-clip: text;
     color: transparent;
     background-image: linear-gradient(to right, rgb(255, 211, 25), rgb(255, 144, 31), rgb(255, 41, 117), rgb(242, 34, 255), rgb(140, 30, 255))
@@ -86,7 +86,7 @@ h3 {
     border-radius: 10px;
     display: block;
     margin: 0 10px;
-    border: #fff 2px solid;
+    border: #2a15b1 1px solid;
 }
 
 .organiser {
@@ -105,7 +105,7 @@ h3 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: calc(100vh - 30vh);
+    height: calc(100vh - 20vh);
     margin: 0 320px;
 }
 
@@ -139,6 +139,15 @@ button {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button img {
+    width: 20px;
+    height: auto;
+    margin-right: 7px;
 }
 
 .abs-img {
@@ -157,7 +166,7 @@ button {
 
     0%,
     100% {
-        left: -200px;
+        left: 0%;
     }
 
     50% {
@@ -176,7 +185,7 @@ button {
 
     0%,
     100% {
-        right: -200px;
+        right: 0%;
     }
 
     50% {
@@ -223,6 +232,25 @@ button {
     }
 }
 
+.sponsors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.sponsors img {
+    width: auto;
+    height: 55px;
+    padding: 7px 10px;
+    margin: 5px 7px;
+    border-radius: 10px;
+    border: #27323e 2px solid;
+    background-color: #fff;
+}
+
 /* Add styles for mobile screens */
 @media (max-width: 768px) {
 
@@ -234,7 +262,6 @@ button {
 
     .logo img {
         width: 70px;
-        border: #2a15b1 1px solid;
     }
 
     .organiser {
@@ -250,12 +277,12 @@ button {
     }
 
     h1 {
-        margin-top: 2rem;
+        margin-top: 0rem;
         font-size: 3rem;
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     h3 {
@@ -301,5 +328,18 @@ button {
         top: unset;
         bottom: 10%;
         animation-duration: 3s;
+    }
+
+    .sponsors img {
+        height: 40px;
+        padding: 5px 7px;
+        margin: 4px 5px;
+    }
+}
+
+/* Add styles for tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .text {
+        margin: 0 10vw;
     }
 }
